@@ -1,0 +1,40 @@
+h1, h2, h3 {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: -0.01rem;
+  color: var(--cor-texto);
+}
+
+h1 {
+  font-size: 4.8rem;
+  color: var(--cor-texto-escuro);
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+.btn-primary {
+  font-family: "Sora", sans-serif;
+  display: inline-block;  
+  background-color: var(--cor-sucesso);
+  padding: 0.9rem 3.4rem;
+  font-weight: 600;
+  letter-spacing: -0.01rem;
+  color: var(--cor-claro);
+}
+
+.menu-item {
+  display: inline-block;
+  background-color: var(--cor-texto-claro);
+  padding: 0.9rem 2.4rem;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.01rem;
+  color: var(--cor-claro);
+}

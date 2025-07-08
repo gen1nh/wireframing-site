@@ -1,0 +1,18 @@
+:root {
+  --cor-principal: #007bff;
+  --cor-secundaria: #6c757d;
+  --cor-fundo: #f8f9fa;
+  --cor-texto: #212529;
+  --cor-texto-escuro: #343a40;
+  --cor-texto-claro: #6c757d;
+  --cor-destaque: #ffc107;
+  --cor-sucesso: #28a745;
+  --cor-perigo: #dc3545;
+  --cor-aviso: #ffc107;
+  --cor-info: #17a2b8;
+  --cor-escuro: #343a40;
+  --cor-claro: #f8f9fa;
+  --cor-borda: #dee2e6;
+  --cor-sombra: rgba(0, 0, 0, 0.1);
+  --cor-transparente: rgba(0, 0, 0, 0.05);
+}

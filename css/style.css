@@ -1,0 +1,97 @@
+/* ========== HEADER ========== */
+
+/* Estiliza o header principal */
+header {
+  width: 100%; /* ocupa toda a largura */
+  height: 8.8rem; /* altura fixa */
+  background-color: var(--cor-fundo); /* cor de fundo vinda da variável */
+  display: flex; /* ativa flexbox para layout interno */
+}
+
+/* Container do header para alinhar o conteúdo */
+header .container {
+  display: flex;
+  justify-content: space-between; /* espaço entre logo e nav */
+  align-items: center; /* alinha no centro verticalmente */
+}
+
+/* Navegação em modo desktop */
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Esconde menu mobile (por padrão) */
+header .menu-mobile {
+  display: none;
+}
+
+/* Lista do menu */
+header nav ul {
+  display: flex; /* coloca os itens lado a lado */
+  margin-right: 3.2rem; /* espaçamento à direita da lista */
+}
+
+/* Espaço entre itens do menu */
+header nav ul li {
+  margin-right: 3.2rem;
+}
+
+/* Remove margem do último item */
+header nav ul li:last-child {
+  margin-right: 0;
+}
+
+/* Botão primário no header */
+header nav .btn-primary {
+  padding: 0.9rem 3.4rem;
+}
+
+
+/* ========== SECTION HERO ========== */
+
+/* Espaçamento vertical da seção */
+.s-hero {
+  padding: 7.2rem 0; /* topo e base */
+}
+
+/* Alinha conteúdo da hero (text + imagem) */
+.s-hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Bloco de texto da hero */
+.s-hero .text {
+  width: 100%;
+  max-width: 64.0rem; /* limita largura */
+}
+
+/* Título da hero */
+.s-hero .text h1 {
+  margin-bottom: 2rem;
+}
+
+/* Parágrafo da hero */
+.s-hero .text p {
+  font-size: 1.8rem;
+  max-width: 48.8rem;
+  margin-bottom: 5.6rem;
+}
+
+/* Botão primário da hero */
+.s-hero .text .btn-primary {
+  padding: 1.7rem 3.4rem;
+}
+
+/* Imagem da hero (ou espaço reservado) */
+.s-hero .image {
+  width: 100%;
+  max-width: 48.8rem;
+  height: 49.6rem;
+  background-color: var(--cor-borda); /* só cor de fundo por enquanto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
