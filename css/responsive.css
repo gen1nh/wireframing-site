@@ -2,6 +2,23 @@
   .s-hero .text {
   max-width: 49%;
 }
+
+.s-card-featured .all-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4.8rem;
+
+}
+
+.s-card-featured .all-cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4.8rem;
+
+}
+
 }
 
 @media(max-width: 1058px) {
