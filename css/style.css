@@ -95,3 +95,63 @@ header nav .btn-primary {
   align-items: center;
   justify-content: center;
 }
+
+.s-card-featured {
+  background-color: var(--cor-texto);
+  padding-top: 10.4rem;
+  padding-bottom: 12rem;
+  color: var(--cor-claro);
+}
+
+.s-card-featured .main-area {
+  border-bottom: 1px solid var(--cor-borda);
+  padding-bottom: 12.5rem;
+}
+
+.s-card-featured .title {
+  display: flex;
+  flex-direction: column;
+}
+
+.s-card-featured .title.center {
+  align-items: center;
+}
+
+.s-card-featured .title p {
+  color: var(--cor-claro);
+  margin-top: 0.8rem;
+}
+
+.s-card-featured .title h2 {
+  color: var(--cor-claro);
+}
+
+.s-card-featured .all-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4.8rem;
+
+}
+
+.s-card-featured .all-cards p {
+  color: var(--cor-escuro);
+  margin-top: 0.8rem;
+  line-height: 150%;
+}
+
+.s-card-featured .all-cards .card {
+  background-color: var(--cor-claro);
+  width: 100%;
+  max-width: 38.4rem;
+  height: 38.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6.4rem;
+}
+
+.s-card-featured .all-cards .card .info {
+  margin-top: 40px;
+  text-align: center;
+  max-width: 28.8rem;
+}

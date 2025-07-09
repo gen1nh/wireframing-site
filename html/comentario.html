@@ -1,0 +1,171 @@
+<body>
+
+  <!-- 
+    HEADER: Cabeçalho principal do site.
+    Serve para exibir a logo, a navegação principal, e botões de interação.
+  -->
+  <header>
+
+    <!-- 
+      Container: centraliza o conteúdo e define um limite de largura.
+      Usado para manter a estrutura consistente em todas as seções.
+    -->
+    <div class="container">
+
+      <!-- 
+        Logo do projeto.
+        Ao ser clicada, retorna para a página inicial.
+      -->
+      <a href="./" class="logo">
+        <img src="../img/logo.svg" alt="logo do projeto Wireframing">
+      </a>
+
+      <!-- 
+        NAV: navegação principal do site.
+        Contém os links do menu e o botão de call-to-action.
+      -->
+      <nav>
+        <ul>
+          <!-- 
+            Lista de itens do menu.
+            Cada <li> representa uma rota ou seção da página.
+          -->
+          <li><a href="" class="menu-item">Menu-item</a></li>
+          <li><a href="" class="menu-item">Menu-item</a></li>
+          <li><a href="" class="menu-item">Menu-item</a></li>
+          <li><a href="" class="menu-item">Menu-item</a></li>
+        </ul>
+
+        <!-- 
+          Botão de destaque para conversão.
+          Ideal para links importantes como "Começar agora", "Assinar", etc.
+        -->
+        <button class="btn-primary">Call to action</button>
+      </nav>
+
+      <!-- 
+        Botão exclusivo para navegação mobile.
+        Usado em layouts responsivos para abrir/fechar o menu lateral.
+      -->
+      <button class="menu-item menu-mobile">Menu Mobile</button>
+    </div>
+  </header>
+
+
+  <!-- 
+    HERO: primeira seção visual da página.
+    É o destaque principal (texto chamativo + imagem + botão).
+    Usado para atrair atenção e explicar rapidamente o que é o projeto.
+  -->
+  <section class="s-hero">
+    <div class="container">
+
+      <!-- 
+        BLOCO DE TEXTO: contém título, parágrafo e botão de ação.
+        Normalmente fica à esquerda em telas maiores.
+      -->
+      <div class="text">
+        <h1>Front-end descomplicado e direto ao ponto!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab culpa sed excepturi eaque recusandae accusamus quibusdam animi tempore quo, maiores iusto quos vitae nostrum magnam laudantium eos a voluptatem placeat.</p>
+
+        <!-- 
+          Botão de ação. Aqui ele é uma <div> estilizada, mas o ideal é trocar por <button> ou <a>.
+        -->
+        <div class="btn-primary">Fazer parte da lista de espera</div>
+      </div>
+
+      <!-- 
+        BLOCO DE IMAGEM: ilustração principal do projeto.
+        Geralmente ao lado do texto no desktop, abaixo no mobile.
+      -->
+      <div class="image">
+        <img src="../img/img-hero.svg" alt="imagem do projeto Wireframing">
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 
+    FEATURED CARDS: seção que apresenta recursos, vantagens ou funcionalidades.
+    Normalmente usada para mostrar o valor do produto ou serviço.
+  -->
+  <section class="s-card-featured">
+
+    <!-- 
+      Container padrão: mantém alinhamento e espaçamento adequado.
+    -->
+    <div class="container">
+
+      <!-- 
+        Área principal da seção: agrupa o título e os cards.
+        Facilita controle de layout e organização do conteúdo.
+      -->
+      <div class="main-area">
+
+        <!-- 
+          Bloco do título da seção.
+          Sempre começa com um <h2> e um parágrafo explicando o conteúdo abaixo.
+        -->
+        <div class="title">
+          <h2>Titulo</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+        </div>
+
+        <!-- 
+          Bloco que contém todos os cards.
+          Aqui você pode aplicar Flexbox ou Grid para organizar os cards em colunas.
+        -->
+        <div class="all-cards">
+
+          <!-- CARD 1 -->
+          <div class="card">
+            <!-- 
+              Ícone ilustrativo do card.
+              Fica visualmente acima ou ao lado do conteúdo.
+            -->
+            <div class="icon">
+              <img src="../img/icon-circle.svg" alt="icon-circle">
+            </div>
+
+            <!-- 
+              Texto informativo do card.
+              Contém um subtítulo (h3) e uma descrição.
+            -->
+            <div class="info">
+              <h3>Titulo</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit libero saepe, sed quidem laudantium aspernatur tenetur mollitia placeat ex possimus fugiat suscipit, natus nulla doloribus magnam, inventore illo architecto ducimus.</p>
+            </div>
+          </div>
+
+          <!-- CARD 2 (variação com classe 'white' para mudar estilo visual) -->
+          <div class="card white">
+            <div class="icon">
+              <img src="../img/icon-circle.svg" alt="icon-circle">
+            </div>
+            <div class="info">
+              <h3>Titulo</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit libero...</p>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="card">
+            <div class="icon">
+              <img src="../img/icon-circle.svg" alt="icon-circle">
+            </div>
+            <div class="info">
+              <h3>Titulo</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit libero...</p>
+            </div>
+          </div>
+
+        </div> <!-- Fim do all-cards -->
+
+      </div> <!-- Fim do main-area -->
+
+    </div> <!-- Fim do container -->
+
+  </section>
+
+</body>
