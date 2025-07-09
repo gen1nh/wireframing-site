@@ -155,3 +155,31 @@ header nav .btn-primary {
   text-align: center;
   max-width: 28.8rem;
 }
+
+.s-card-featured .second-area {
+  margin-top: 11.2rem;
+}
+
+.s-card-featured .second-area .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6.4rem;
+}
+
+.s-card-featured .second-area .all-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.2rem;
+
+}
+
+.s-card-featured .second-area .all-imgs .image {
+  width: 17.6rem;
+  height: 11.2rem;
+  background-color: var(--cor-claro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
