@@ -3,21 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/reset.css">         <!-- 1: Reset vem primeiro -->
-  <link rel="stylesheet" href="css/variables.css">     <!-- 2: Variáveis globais -->
-  <link rel="stylesheet" href="css/patterns.css">      <!-- 3: Componentes e padrões -->
-  <link rel="stylesheet" href="css/grid.css">          <!-- 4: Layout e estrutura -->
-  <link rel="stylesheet" href="css/style.css">         <!-- 5: Estilos principais -->
-  <link rel="stylesheet" href="css/responsive.css">    <!-- 6: Media queries no final -->
+  <!-- CSS Base -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/patterns.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
 
   <title>Wireframing</title>
-
 </head>
 <body>
+
+  <!-- Header -->
   <header>
     <div class="container">
       <a href="./" class="logo">
@@ -25,18 +31,10 @@
       </a>
       <nav>
         <ul>
-          <li>
-            <a href="" class="menu-item">Menu-item</a>
-          </li>
-                    <li>
-            <a href="" class="menu-item">Menu-item</a>
-          </li>
-                    <li>
-            <a href="" class="menu-item">Menu-item</a>
-          </li>
-                    <li>
-            <a href="" class="menu-item">Menu-item</a>
-          </li>
+          <li><a href="#" class="menu-item">Menu-item</a></li>
+          <li><a href="#" class="menu-item">Menu-item</a></li>
+          <li><a href="#" class="menu-item">Menu-item</a></li>
+          <li><a href="#" class="menu-item">Menu-item</a></li>
         </ul>
         <button class="btn-primary">Call to action</button>
       </nav>
@@ -44,22 +42,25 @@
     </div>
   </header>
 
-  <section class="s-hero">
+  <!-- Hero Section -->
+  <section class="s-hero scroll-reveal">
     <div class="container">
       <div class="text">
         <h1>Front-end descomplicado e direto ao ponto!</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab culpa sed excepturi eaque recusandae accusamus quibusdam animi tempore quo, maiores iusto quos vitae nostrum magnam laudantium eos a voluptatem placeat.</p>
         <div class="btn-primary">Fazer parte da lista de espera</div>
       </div>
-      <div class="image">
+      <div class="image fade-in-left">
         <img src="img/img-hero.svg" alt="imagem do projeto Wireframing">
       </div>
-
     </div>
   </section>
 
-  <section class="s-card-featured">
+  <!-- Card Feature Section -->
+  <section class="s-card-featured scroll-reveal">
     <div class="container">
+      
+      <!-- Cards principais -->
       <div class="main-area">
         <div class="title center">
           <h2>Titulo</h2>
@@ -69,85 +70,63 @@
           <div class="card">
             <div class="icon">
               <img src="img/icon-circle.svg" alt="icon-circle">
-              </div>
-              <div class="info">
-                <h3>Titulo</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit libero saepe, sed quidem laudantium aspernatur.</p>
-              </div>
+            </div>
+            <div class="info">
+              <h3>Titulo</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit libero saepe, sed quidem laudantium aspernatur.</p>
+            </div>
           </div>
           <div class="card white">
             <div class="icon">
               <img src="img/icon-circle.svg" alt="icon-circle">
-              </div>
-              <div class="info">
-                <h3>
-                  Titulo
-                </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit libero saepe, sed quidem laudantium aspernatur.</p>
-              </div>
+            </div>
+            <div class="info">
+              <h3>Titulo</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit libero saepe, sed quidem laudantium aspernatur.</p>
+            </div>
           </div>
           <div class="card">
             <div class="icon">
               <img src="img/icon-circle.svg" alt="icon-circle">
-              </div>
-              <div class="info">
-                <h3>
-                  Titulo
-                </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit libero saepe, sed quidem laudantium aspernatur.</p>
-              </div>
-          </div>          
+            </div>
+            <div class="info">
+              <h3>Titulo</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit libero saepe, sed quidem laudantium aspernatur.</p>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- Miniaturas secundárias -->
       <div class="second-area">
         <div class="top">
           <div class="title">
             <h2>Cards</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
           </div>
-          <a href="" class="btn-primary">Call to action</a>
+          <a href="#" class="btn-primary">Call to action</a>
         </div>
+
         <div class="all-imgs">
-          <div class="image">
-            <img src="../wireframing/img/thumb.svg" alt="thumb">
-          </div>
-                    <div class="image">
-            <img src="../wireframing/img/thumb.svg" alt="thumb">
-          </div>
-                    <div class="image">
-            <img src="../wireframing/img/thumb.svg" alt="thumb">
-          </div>
-                    <div class="image">
-            <img src="../wireframing/img/thumb.svg" alt="thumb">
-          </div>
-                    <div class="image">
-            <img src="../wireframing/img/thumb.svg" alt="thumb">
-          </div>
-                    <div class="image">
-            <img src="../wireframing/img/thumb.svg" alt="thumb">
-          </div>
-                    <div class="image">
-            <img src="../wireframing/img/thumb.svg" alt="thumb">
-          </div>
-                    <div class="image">
-            <img src="../wireframing/img/thumb.svg" alt="thumb">
-          </div>
-                    <div class="image">
-            <img src="../wireframing/img/thumb.svg" alt="thumb">
-          </div>
-                    <div class="image">
-            <img src="../wireframing/img/thumb.svg" alt="thumb">
-          </div>
-                    <div class="image">
-            <img src="../wireframing/img/thumb.svg" alt="thumb">
-          </div>
-                    <div class="image">
-            <img src="../wireframing/img/thumb.svg" alt="thumb">
-          </div>
+          <!-- repete 12 vezes a imagem -->
+          <div class="image"><img src="img/thumb.svg" alt="thumb"></div>
+          <div class="image"><img src="img/thumb.svg" alt="thumb"></div>
+          <div class="image"><img src="img/thumb.svg" alt="thumb"></div>
+          <div class="image"><img src="img/thumb.svg" alt="thumb"></div>
+          <div class="image"><img src="img/thumb.svg" alt="thumb"></div>
+          <div class="image"><img src="img/thumb.svg" alt="thumb"></div>
+          <div class="image"><img src="img/thumb.svg" alt="thumb"></div>
+          <div class="image"><img src="img/thumb.svg" alt="thumb"></div>
+          <div class="image"><img src="img/thumb.svg" alt="thumb"></div>
+          <div class="image"><img src="img/thumb.svg" alt="thumb"></div>
+          <div class="image"><img src="img/thumb.svg" alt="thumb"></div>
+          <div class="image"><img src="img/thumb.svg" alt="thumb"></div>
         </div>
       </div>
     </div>
   </section>
-</body>
 
+  <!-- Script externo -->
+  <script src="js/script.js"></script>
+</body>
 </html>
