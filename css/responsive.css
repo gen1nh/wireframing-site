@@ -1,31 +1,35 @@
-@media(max-width: 1200px) {
+/* ========== MEDIA QUERIES ========== */
+
+/* === Até 1200px (laptops grandes) === */
+@media (max-width: 1200px) {
   .s-hero .text {
-  max-width: 49%;
-}
+    max-width: 49%;
+  }
 
-.s-card-featured .all-cards {
-  width: 100%;
-}
+  .s-card-featured .all-cards {
+    width: 100%;
+  }
 
-.s-card-featured .all-cards .card {
-  max-width: 32%
-}
+  .s-card-featured .all-cards .card {
+    max-width: 32%;
+  }
 
-.s-card-featured .second-area .all-imgs {
-  gap: 2rem 2%;
-}
+  .s-card-featured .second-area .all-imgs {
+    gap: 2rem 2%;
+  }
 
-.s-card-featured .second-area .all-imgs .image{
-  width: 23.5%;
-}
-} /* <-- Close @media(max-width: 1200px) here */
+  .s-card-featured .second-area .all-imgs .image {
+    width: 23.5%;
+  }
+} /* <-- Fecha @media 1200px */
 
-@media(max-width: 1058px) {
+/* === Até 1058px (tablet na horizontal) === */
+@media (max-width: 1058px) {
   header nav {
     display: none;
   }
 
-    header .menu-mobile {
+  header .menu-mobile {
     display: block;
   }
 
@@ -35,17 +39,14 @@
   }
 
   .s-hero .text {
-  max-width: 100%;
-  margin-bottom: 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;  
+    max-width: 100%;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
- .s-hero .text h1 {
-    text-align: center;
-  }
-
+  .s-hero .text h1,
   .s-hero .text p {
     text-align: center;
   }
@@ -63,22 +64,24 @@
     margin-bottom: 2rem;
   }
 
-   .s-card-featured .all-cards .card:last-child {
+  .s-card-featured .all-cards .card:last-child {
     margin-bottom: 0;
   }
 
   .s-card-featured .all-cards .card .info {
     max-width: 100%;
   }
-}
+} /* <-- Fecha @media 1058px */
 
-@media(max-width: 810px) {
-  .s-card-featured .second-area .top{
+/* === Até 810px (tablet em pé) === */
+@media (max-width: 810px) {
+  .s-card-featured .second-area .top {
     flex-direction: column;
     align-items: center;
   }
 
-  .s-card-featured .second-area .top h2, p {
+  .s-card-featured .second-area .top h2,
+  .s-card-featured .second-area .top p {
     text-align: center;
   }
 
@@ -89,24 +92,26 @@
   .s-card-featured .second-area .title {
     margin-bottom: 2rem;
   }
-}
+} /* <-- Fecha @media 810px */
 
-@media(max-width: 768px) {
-  
-}
+/* === Até 768px (celular grande) === */
+@media (max-width: 768px) {
+  /* Adicione ajustes específicos aqui se necessário */
+} /* <-- Fecha @media 768px */
 
-@media(max-width: 600px) {
+/* === Até 600px (celular médio) === */
+@media (max-width: 600px) {
   .s-card-featured .main-area {
-  padding: 4rem;
+    padding: 4rem;
   }
-}
+} /* <-- Fecha @media 600px */
 
-@media(max-width: 480px) {
-
+/* === Até 480px (celular padrão) === */
+@media (max-width: 480px) {
   html {
-    font-size: 55%;
+    font-size: 55%; /* Reduz a base do rem para fontes menores */
   }
- 
+
   header .logo {
     max-width: 13rem;
   }
@@ -116,11 +121,11 @@
   }
 
   h1 {
-    font-size: 4.2rem;
+    font-size: clamp(2.8rem, 6vw, 4.2rem); /* Escalonamento dinâmico */
   }
 
   .s-hero .text p {
-    margin-bottom: 3rem;  
+    margin-bottom: 3rem;
   }
 
   .s-hero .image {
@@ -134,7 +139,7 @@
   .s-card-featured {
     padding: 4rem;
   }
-  
+
   .s-card-featured .title p {
     text-align: center;
     max-width: 80%;
@@ -144,27 +149,25 @@
     margin-top: 4rem;
   }
 
-  .s-card-featured .second-area .top p {
-    margin: 0 auto;
-  }
-
   .s-card-featured .second-area .top {
     margin-top: 3rem;
   }
 
-  .s-card-featured .main-area {
-    padding: 4rem;
-  }
-
-  .s-card-featured .second-area .all-imgs{
-  gap: 0.5rem 2%;
-  }
-
-  .s-card-featured .second-area .all-imgs .image{
-  width: 49%;
-  }
-
-  .s-card-featured .second-area .text h2, p {
+  .s-card-featured .second-area .top p {
+    margin: 0 auto;
     text-align: center;
   }
+
+  .s-card-featured .second-area .title h2,
+  .s-card-featured .second-area .title p {
+    text-align: center;
   }
+
+  .s-card-featured .second-area .all-imgs {
+    gap: 0.5rem 2%;
+  }
+
+  .s-card-featured .second-area .all-imgs .image {
+    width: 49%;
+  }
+} /* <-- Fecha @media 480px */

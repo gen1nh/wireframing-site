@@ -96,90 +96,103 @@ header nav .btn-primary {
   justify-content: center;
 }
 
+/* ========== S-CARD-FEATURED ========== */
+
+/* Seção destacada com fundo escuro e texto claro */
 .s-card-featured {
-  background-color: var(--cor-texto);
-  padding-top: 10.4rem;
-  padding-bottom: 12rem;
-  color: var(--cor-claro);
+  background-color: var(--cor-texto); /* fundo escuro para contraste */
+  padding-top: 10.4rem; /* espaçamento interno topo */
+  padding-bottom: 12rem; /* espaçamento interno base */
+  color: var(--cor-claro); /* cor clara para o texto */
 }
 
+/* Área principal dentro da seção com borda inferior */
 .s-card-featured .main-area {
-  border-bottom: 1px solid var(--cor-borda);
-  padding-bottom: 12.5rem;
+  border-bottom: 1px solid var(--cor-borda); /* linha separadora */
+  padding-bottom: 12.5rem; /* espaçamento inferior para respiro */
 }
 
+/* Container do título com flex vertical */
 .s-card-featured .title {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* título em coluna (um embaixo do outro) */
 }
 
+/* Alinha o título ao centro quando a classe center for usada */
 .s-card-featured .title.center {
-  align-items: center;
+  align-items: center; /* centraliza horizontalmente */
 }
 
+/* Parágrafo dentro do título com cor clara e margem superior */
 .s-card-featured .title p {
   color: var(--cor-claro);
-  margin-top: 0.8rem;
+  margin-top: 0.8rem; /* espaçamento acima */
 }
 
+/* Título principal com cor clara */
 .s-card-featured .title h2 {
   color: var(--cor-claro);
 }
 
+/* Container com todos os cards lado a lado */
 .s-card-featured .all-cards {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 4.8rem;
-
+  display: flex; /* layout flex horizontal */
+  justify-content: space-between; /* espaço igual entre cards */
+  margin-top: 4.8rem; /* margem acima para separar do título */
 }
 
+/* Parágrafos dentro dos cards com cor escura e espaçamento */
 .s-card-featured .all-cards p {
   color: var(--cor-escuro);
-  margin-top: 0.8rem;
-  line-height: 150%;
+  margin-top: 0.8rem; /* espaçamento acima */
+  line-height: 150%; /* melhora a legibilidade do texto */
 }
 
+/* Card individual com fundo claro, tamanho fixo e alinhamento vertical */
 .s-card-featured .all-cards .card {
-  background-color: var(--cor-claro);
-  width: 100%;
-  max-width: 38.4rem;
-  height: 38.2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 6.4rem;
+  background-color: var(--cor-claro); /* fundo claro */
+  width: 100%; /* ocupa toda largura possível */
+  max-width: 38.4rem; /* largura máxima */
+  height: 38.2rem; /* altura fixa */
+  display: flex; /* flex para alinhamento vertical */
+  flex-direction: column; /* itens organizados em coluna */
+  align-items: center; /* centraliza horizontalmente */
+  padding-top: 6.4rem; /* espaçamento interno topo */
 }
 
+/* Info dentro do card com margem, alinhamento central e largura limitada */
 .s-card-featured .all-cards .card .info {
-  margin-top: 40px;
-  text-align: center;
-  max-width: 28.8rem;
+  margin-top: 40px; /* espaçamento acima */
+  text-align: center; /* texto centralizado */
+  max-width: 28.8rem; /* largura máxima para texto */
 }
 
+/* Segunda área da seção com espaçamento superior */
 .s-card-featured .second-area {
-  margin-top: 11.2rem;
+  margin-top: 11.2rem; /* espaço entre áreas */
 }
 
+/* Topo da segunda área com flex para separar conteúdo */
 .s-card-featured .second-area .top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 6.4rem;
+  display: flex; /* flex container */
+  align-items: center; /* alinha verticalmente */
+  justify-content: space-between; /* espaço entre os itens */
+  margin-bottom: 6.4rem; /* espaço abaixo */
 }
 
+/* Container das imagens na segunda área com flex wrap e espaçamento */
 .s-card-featured .second-area .all-imgs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3.2rem;
-
+  display: flex; /* flex horizontal */
+  flex-wrap: wrap; /* quebra linha se necessário */
+  gap: 3.2rem; /* espaçamento uniforme entre imagens */
 }
 
+/* Estilo para cada imagem na galeria */
 .s-card-featured .second-area .all-imgs .image {
-  width: 17.6rem;
-  height: 11.2rem;
-  background-color: var(--cor-claro);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 17.6rem; /* largura fixa */
+  height: 11.2rem; /* altura fixa */
+  background-color: var(--cor-claro); /* fundo claro */
+  display: flex; /* flex para centralizar conteúdo */
+  align-items: center; /* centraliza verticalmente */
+  justify-content: center; /* centraliza horizontalmente */
 }
-
