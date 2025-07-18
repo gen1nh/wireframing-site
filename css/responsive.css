@@ -138,7 +138,7 @@
 } /* <-- Fecha @media 600px */
 
 /* === Até 480px (celular padrão) === */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   html {
     font-size: 55%; /* Reduz a base do rem para fontes menores */
   }
