@@ -71,6 +71,12 @@
   .s-card-featured .all-cards .card .info {
     max-width: 100%;
   }
+
+  footer main nav {
+  max-width: 63rem;
+}
+
+
 } /* <-- Fecha @media 1058px */
 
 /* === Até 810px (tablet em pé) === */
@@ -92,12 +98,37 @@
   .s-card-featured .second-area .title {
     margin-bottom: 2rem;
   }
+
+    footer main nav {
+  max-width: 45rem;
+}
 } /* <-- Fecha @media 810px */
 
 /* === Até 768px (celular grande) === */
 @media (max-width: 768px) {
-  /* Adicione ajustes específicos aqui se necessário */
-} /* <-- Fecha @media 768px */
+  footer main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; /* talvez necessário aqui também */
+  }
+
+  footer main .area-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  footer main .area-left p {
+    text-align: center;
+  }
+
+  footer main nav {
+    max-width: 100%;
+  }
+}
+
 
 /* === Até 600px (celular médio) === */
 @media (max-width: 600px) {
@@ -170,4 +201,48 @@
   .s-card-featured .second-area .all-imgs .image {
     width: 49%;
   }
+
+  .s-newletter {
+  padding: 4rem 0rem;
+  background-color: var(--cor-claro);
+}
+
+footer {
+  padding: 4rem 0;
+}
+
+footer main nav {
+  flex-direction: column;
+  align-items: center;
+}
+
+footer main nav .item {
+  margin-bottom: 4rem;
+}
+
+footer main nav .item ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer main nav .item h6 {
+  text-align: center;
+}
+
+footer main nav .item:last-child {
+  margin-bottom: 0;
+}
+
+footer .copy {
+  flex-direction: column;
+}
+footer .copy p {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+footer .copy .group {
+  flex-direction: column;
+}
 } /* <-- Fecha @media 480px */
